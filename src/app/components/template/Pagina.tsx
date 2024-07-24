@@ -10,9 +10,7 @@ export default function Pagina(props: PaginaProps) {
     <div className="flex flex-col min-h-screen">
       <Cabecalho />
       <main
-        className={`flex-1 w-[1200px] mx-auto bg-zinc-300 py-10 ${
-          props.className ?? ""
-        }`}
+        className={`flex-1 w-[1200px] mx-auto py-10 ${props.className ?? ""}`}
       >
         {props.children}
       </main>
